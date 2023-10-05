@@ -1,0 +1,33 @@
+import java.util.Random;
+
+public class Lucky7 {
+
+    public static void main(String[] args) {
+    // Generate random numbers
+        int num1 = generateRandomNumber();
+        int num2 = generateRandomNumber();
+        int num3 = generateRandomNumber();
+
+        System.out.println("The first number is " + num1);
+        System.out.println("The Second number is " + num2);
+        System.out.println("The third number is " + num3);
+        
+        //Checks if any of the three numbers is equal to 7.
+        if (num1 == 7 || num2 == 7 || num3 == 7) {
+            System.out.println("You won");
+        } else {
+            System.out.println("You lost");
+        }
+    }
+    
+    // Create 3 numbers that are between 1-10
+    private static int generateRandomNumber() {
+        Random random = new Random();
+        return random.nextInt(10) + 1;
+    }
+    
+    	int PlayerMoney = 5;
+    	System.out.println("The player has 5€.");
+    	
+    
+}

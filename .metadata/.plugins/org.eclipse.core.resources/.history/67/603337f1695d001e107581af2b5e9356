@@ -1,0 +1,16 @@
+
+public class Lucky7 {
+
+	public static void main(String[] args) {
+		// Generate random numbers
+		int num1 = generateRandomNumber();
+		int num2 = generateRandomNumber();
+		int num3 = generateRandomNumber();
+		
+		System.out.println("The first number is " + num1);
+		System.out.println("The Second number is " + num2);
+		System.out.println("The third number is " + num3);
+
+	}
+
+}
